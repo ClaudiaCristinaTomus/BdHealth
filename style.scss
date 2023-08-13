@@ -2,11 +2,63 @@
 @import "./fontawesome/scss/variables";
 
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
-  
-  html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,35 +68,294 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
-  }
-  
-  footer, header, nav, section, main{
+}
+
+footer,
+header,
+nav,
+section,
+main {
     display: block;
-  }
-  
-  body{
+}
+
+body {
     line-height: 1;
-  }
-  
-  ol, ul{
+}
+
+ol,
+ul {
     list-style: none;
-  }
-  
-  blockquote, q{
+}
+
+blockquote,
+q {
     quotes: none;
-  }
-  
-  blockquote:before, blockquote:after, q:before, q:after{
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
-  }
-  
-  table{
+}
+
+table {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  
-  input{
-    
+}
+
+input {
+
     border-radius: 0;
-  }
+}
+
+
+body {
+  
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    animation: slide-in 1s ease-out;
+}
+
+ul {
+    
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    
+
+    li {
+       
+       width: max-content;
+        padding:10px 30px;
+        transition: background 0.2s;
+
+        a {
+            font-size: 19px;
+            color: #515052;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        ul {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            display: block;
+            margin: 12px -12px;
+            padding: 0;
+            transition: opacity 0.2s, visibility 0.2s;
+
+            li {
+                width:fit-content;
+                margin: -2px 0 0 -2px;
+                line-height: 1.7;
+
+                a {
+                    color: #515052;
+                }
+            }
+        }
+
+        &:hover {
+
+            a {
+                font-size: 16px;
+                color: #515052;
+            }
+
+            ul {
+                visibility: visible;
+                opacity: 1;
+                box-shadow: 0px 3px 5px 2px #EBECF1;
+                width: 150px;
+
+                li {
+                    
+                    color: #515052;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        top: -50px;
+    }
+
+    40% {
+        top: 20px;
+    }
+
+    70% {
+        top: 10px;
+    }
+
+    100% {
+        top: 15px;
+    }
+}
+
+.about{
+  
+    height: 500px;
+    display: flex;
+    margin: 180px auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    .left{
+        margin:0 100px;
+        display:flex;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-around;
+        align-items: flex-start;
+        h2{
+            width:250px;
+            font-size: 70px;
+            
+        }
+        p{
+            
+            font-size: 20px;
+            padding: 40px 0;
+        }
+        button {
+            background-color: #c9d6ca; /* Green */
+            border: none;
+            color: rgb(126, 62, 62);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+          }
+    }
+    .right{
+        display:flex;
+      
+        .imgAbout{
+            width: 600px;
+            height: 600px;
+        }
+    }
+}
+
+.container {
+    .header {
+        max-width: 50%;
+        padding: 30px 40px;
+        margin: 0 auto;
+    }
+
+    .form {
+        max-width: 50%;
+        padding: 30px 40px;
+        margin: 0 auto;
+
+        button {
+            background-color: #8e44ad;
+            border: 2px solid #8e44ad;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+
+            label {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            input {
+                border: 2px solid #f0f0f0;
+                border-radius: 4px;
+                display: block;
+                font-family: inherit;
+                font-size: 14px;
+                padding: 10px;
+                width: 100%;
+            }
+
+            &:focus {
+                outline: 0;
+                border-color: #777;
+            }
+
+            &.success {
+                color: #2ecc71;
+                visibility: visible;
+            }
+
+            i.fa-var-check-circle {
+                color: #2ecc71;
+                visibility: visible;
+            }
+
+            &.error {
+                color: #e74c3c;
+                visibility: visible;
+            }
+
+            &i.fa-var-building-circle-exclamation {
+                color: #e74c3c;
+                visibility: visible;
+            }
+
+            small {
+                color: #e74c3c;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+            }
+
+            &.error small {
+                visibility: visible;
+            }
+        }
+    }
+
+    .botton {
+        margin-left: 1400px;
+        max-width: 10%;
+        background-color: #d4d1d5;
+        border: 2px solid #c6c2c9;
+        border-radius: 44px;
+        color: #fff;
+        display: block;
+        font-family: inherit;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        width: 70px;
+    }
+}

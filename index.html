@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet/scss" type="text/scss" href="style.scss" />
     <link href="/fontawesome/scss/_variables.scss" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -15,24 +18,43 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <h2>BdHealth</h2>
-        </div>
-        <div class="menu">
-            <ul>              
-                <li><a href="#">Something1</a></li>
-                <li><a href="#">Something2</a></li>
-                <li><a href="#">Something3</a></li>
-                <li><a href="#">Something4</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <li onclick="location.href='login.html';"  style="cursor:pointer;">LogIn</li>
-            <li onclick="location.href='sign.html';"  style="cursor:pointer;">SignUp</li>
-        </div>
-    </header>
-</body>
+    <nav>
+        <ul>
+            <li class="logo" style="margin-right: 100px;"><a href="#0">BdHealth</a></li>
+            <li><a href="#0">Services</a></li>
+            <li>
+                <a href="#0">For Patients</a>
+                <ul>
+                    <li><a href="#0">Burger King</a></li>
+                    <li><a href="#0">Southwest Airlines</a></li>
+                    <li><a href="#0">Levi Strauss</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#0">Info</a>
+                <ul>
+                    <li><a href="#0">Print Design</a></li>
+                    <li><a href="#0">Web Design</a></li>
+                    <li><a href="#0">Mobile App Development</a></li>
+                </ul>
+            </li>
+            <li><a href="#0">Contact Us</a></li>
+            <div class="login" style="display: flex; margin-left: 100px;">
+                <li><a href=" logIn.html">Log In</a></li>
+                <li><a href="signIn.html">Sign In</a></li>
+            </div>
+        </ul>
+    </nav>
 
+    <section class="about">
+        <div class="left">
+            <h2>We Always Provide Best Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum voluptates soluta doloremque? Sequi nam earum inventore expedita dicta quidem dolores veniam mollitia magni esse quasi accusantium assumenda, quae est!</p>
+            <button>Back an Appointment</button>
+        </div>
+        <div class="right">
+            <img class="imgAbout" src="/images/aboutImg.jpg" alt="Girl in a jacket">
+        </div>
+    </section>
+</body>
 </html>
