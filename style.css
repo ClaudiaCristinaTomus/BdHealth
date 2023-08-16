@@ -8340,6 +8340,12 @@ body {
   font-family: "Lexend Exa", sans-serif;
 }
 
+.nav {
+  width: 100%;
+  height: 100px;
+  background: #d8d0d0;
+}
+
 nav {
   position: fixed;
   top: 15px;
@@ -8367,6 +8373,17 @@ ul li a {
   color: #515052;
   text-decoration: none;
   transition: color 0.2s;
+}
+ul li .button {
+  background-color: #474847; /* Green */
+  border: none;
+  color: rgb(229, 217, 217);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
 }
 ul li ul {
   visibility: hidden;
@@ -8415,12 +8432,13 @@ ul li:hover ul li {
   }
 }
 .about {
-  height: 500px;
+  height: 700px;
   display: flex;
-  margin: 180px auto;
+  margin-top: 120px 0;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100%;
+  background-color: #d8d0d0;
 }
 .about .left {
   margin: 0 100px;
@@ -8441,9 +8459,9 @@ ul li:hover ul li {
   padding: 40px 0;
 }
 .about .left button {
-  background-color: #c9d6ca; /* Green */
+  background-color: #474847; /* Green */
   border: none;
-  color: rgb(126, 62, 62);
+  color: rgb(229, 217, 217);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -8544,4 +8562,145 @@ ul li:hover ul li {
   margin-top: 20px;
   cursor: pointer;
   width: 70px;
+}
+
+.looking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8c52ff;
+}
+.looking section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+.looking .swiper {
+  width: 950px;
+}
+.looking .card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  height: 400px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.looking .card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+}
+.looking .card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+.looking section .card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 20%;
+  padding: 3px;
+  background: #7d2ae8;
+  margin-top: 30px;
+}
+.looking section .card .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20%;
+  border: 3px solid #fff;
+}
+.looking .card .media-icons {
+  position: absolute;
+  top: 12px;
+  right: 95px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.looking .card .media-icons i {
+  color: #7d2ae8;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 10px;
+}
+.looking .card .media-icons i:hover {
+  opacity: 1;
+}
+.looking .card .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: black;
+}
+.looking .name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.looking .name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+.looking .card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.looking .card .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7d2ae8;
+}
+.looking .card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.looking .card .button button {
+  background: #7d2ae8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.looking .button button:hover {
+  background: #6616d0;
+}
+.looking .swiper-pagination {
+  position: absolute;
+  top: 450px;
+}
+.looking .swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: white;
+}
+.looking .swiper-button-next, .looking .swiper-button-prev {
+  opacity: 0.7;
+  color: white;
+  transition: all 0.3s ease;
+}
+.looking .swiper-button-next:hover, .looking .swiper-button-prev:hover {
+  opacity: 1;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
