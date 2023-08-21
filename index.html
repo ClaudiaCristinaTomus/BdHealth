@@ -12,6 +12,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet/scss" type="text/scss" href="style.scss" />
     <link href="/fontawesome/scss/_variables.scss" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -21,7 +22,7 @@
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <script src="script.js" type="text/javascript"></script>
+    <script src="script.js" defer type="text/javascript"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>BdHealth</title>
 </head>
@@ -70,12 +71,41 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <section class="carouselFirst">
         <h2>Are you looking for?</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur earum aliquid tenetur officia quas
             blanditiis minus eius adipisci</p>
-        <div class="swipper">
-            <!------------------------carousellllll =------------------------------------->
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="images/img1Carousel.jpg" alt="img" draggable="false"></div>
+                    <h2>Tom Papp</h2>
+                    <span>Sales Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/img2Carousel.jpg" alt="img" draggable="false"></div>
+                    <h2>Tom Papp</h2>
+                    <span>Sales Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/img1Carousel.jpg" alt="img" draggable="false"></div>
+                    <h2>Tom Papp</h2>
+                    <span>Sales Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="images/img2Carousel.jpg" alt="img" draggable="false"></div>
+                    <h2>Tom Papp</h2>
+                    <span>Sales Manager</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="images/img1Carousel.jpg" alt="img" draggable="false"></div>
+                    <h2>Tom Papp</h2>
+                    <span>Sales Manager</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </section>
 
@@ -177,16 +207,16 @@
 
         </div>
         <div class="two">
-            
+
         </div>
         <div class="three">
-            
+
         </div>
         <div class="four">
-            
+
         </div>
         <div class="five">
-            
+
         </div>
     </section>
 </body>
