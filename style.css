@@ -8627,6 +8627,235 @@ ul li:hover ul li {
   font-size: 1.31rem;
 }
 
+.pain {
+  width: 1000px;
+  margin: 0 250px;
+  display: flex;
+}
+.pain .leftPain img {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+.pain .rightPain {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.pain .rightPain p {
+  padding: 20px 0;
+}
+.pain .rightPain .listPain p {
+  padding: 10px 0;
+}
+.pain .rightPain .buttonPain {
+  width: 200px;
+  background-color: #d4d1d5;
+  border: 2px solid #c6c2c9;
+  border-radius: 44px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.specialities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 80px 250px;
+}
+.specialities h2 {
+  font-size: 30px;
+}
+.specialities .paragraphSpec {
+  margin: 20px 0;
+  width: 700px;
+}
+.specialities .cardSpecialities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 70px 0px;
+}
+.specialities .cardSpecialities .card {
+  padding: 10px 30px;
+  margin: 10px 20px;
+  height: 150px;
+  width: 180px;
+  border: 1px #c6c2c9 solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.specialities .cardSpecialities .card p {
+  padding: 10px 0px;
+}
+
+.choose {
+  width: 80%;
+  margin: 80px 250px;
+}
+.choose .chooseTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose .chooseTitle p {
+  padding: 20px 0;
+}
+.choose .contentChoose {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  max-width: 900px;
+}
+.choose .contentChoose .leftChoose {
+  display: grid;
+  max-width: 500px;
+  display: grid;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-columns: auto auto;
+}
+.choose .contentChoose .leftChoose div:nth-child(2n) {
+  margin-top: 70px;
+}
+.choose .contentChoose .leftChoose .cardChoose {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #6a6d78;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.choose .contentChoose .leftChoose .cardChoose p {
+  font-size: 12px;
+}
+.choose .contentChoose .rightChoose .imgChoose {
+  margin-top: 100px;
+  height: 300px;
+  width: 380px;
+  border-radius: 20px;
+  margin-left: 200px;
+}
+
+.faq {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq .faqparagraph {
+  max-width: 600px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 2rem 0rem;
+}
+
+.faq1 {
+  max-width: 700px;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(139, 129, 129);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.faq1.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq1.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.faq .buttonFaq {
+  background-color: hsl(224, 74%, 34%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 41px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.footer .footerMenu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.footer .footerMenu .iconsFooter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .wrapper .carousel {
     grid-auto-columns: calc(50% - 9px);
