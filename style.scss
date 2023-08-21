@@ -1,6 +1,6 @@
 @import "./fontawesome/scss/fontawesome.scss";
 @import "./fontawesome/scss/variables";
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,300;1,400;1,500&display=swap');
 
 *,
 *:before,
@@ -280,8 +280,9 @@ ul {
         display: flex;
 
         .imgAbout {
-            width: 600px;
-            height: 600px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
         }
     }
 }
@@ -741,6 +742,42 @@ $breakpoint-tablet: 768px;
 $breakpoint-mobile: 400px;
 
 @media (max-width: $breakpoint-mobile) {
+    .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .left 
+    h2 p{
+    font-size: 6px;
+    }
+    }
+
+    .pain{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    }
+
+    .specialities{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    }
+    .choose{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    }
+
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
